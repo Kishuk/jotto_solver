@@ -27,29 +27,36 @@ Let's play through an example game. Player 1 thinks of the secret word - **BROCC
 
 Player 2 enters 8 as the number of letters and asks the program for the next best guess, which is **POSTURED**. Note that there are about 28,000 possible answers at this point.
 
-// TODO: img
+![POSTURED](readme_imgs/example_game_1.png)
+
 
 The number of letters in BROCCOLI that also appear in POSTURED is 3 (R, O, O), so Player 1 responds "3".
 
 Player 2 enters this new information into the solver and asks for the next best guess, which is **GUNSMITH**.
 
-// TODO: img
+![GUNSMITH](readme_imgs/example_game_2.png)
+
 
 Player 1 responds with "1" (I). Player 2 again updates the solver with the new information, and now guesses the next best word: **BREEZILY**.
 
-// TODO: img
+![BREEZILY](readme_imgs/example_game_3.png)
+
 
 Player 1 responds with "4" (B, R, I, L). Player 2 guesses **SCABBLED**. Frankly, that is not likely the word that Player 1 chose (because who thinks of the word "scabbled"?), but it _is_ the one which narrows down the possible result set as much as possible.
 
-// TODO: img
+![SCABBLED](readme_imgs/example_game_4.png)
+
 
 Player 1 responds with "4" (B, C, C, L). Player 2 again updates the solver with the new information, and now guesses the next best word: **BLOWHOLE**. And hey! There's BROCCOLI off in the list on the right side! We're getting close...
 
-// TODO: img
+![BLOWHOLE](readme_imgs/example_game_5.png)
+
 
 Player 1 responds with "4" (B, O, O, L). Player 2 updates things again, and the list is now down to 5 words! At this point, you could probably guess the _actual_ word because only one of them is really a common word. But hey - who knows how tricky the other player is being! Player 2 guesses **AWFULLER** as the solver suggests.
 
-// TODO: img
+![AWFULLER](readme_imgs/example_game_6.png)
+
 
 Player 1 responds with "2" (R, L). Player 2 updates things, and has now officially eliminated all possible words other than **BROCCOLI**! Success!
 
+![BROCCOLI](readme_imgs/example_game_7.png)
